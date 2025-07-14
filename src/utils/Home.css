@@ -1,0 +1,67 @@
+/* utils/Home.css */
+
+.gemini-container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #2f2f40;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .gemini-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #7fbcff;
+  }
+  
+  .gemini-textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: #1a1a2f;
+    color: #fff;
+    resize: vertical;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .gemini-textarea:focus {
+    outline: none;
+    background-color: #22223b;
+    box-shadow: 0 0 8px #7fbcff;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #7fbcff;
+    color: #000;
+  }
+  
+  .gemini-response {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  .gemini-container {
+    margin: 0 auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures button, heading, etc. align */
+  }
+  
