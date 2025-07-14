@@ -10,7 +10,6 @@ function hasTextMethod(obj: any): obj is { text: () => Promise<string> } {
 export async function getGeminiResponse(prompt: string): Promise<string> {
   try {
     const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
-
     const result = await model.generateContent(prompt);
     const response = result.response;
 
@@ -24,14 +23,13 @@ export async function getGeminiResponse(prompt: string): Promise<string> {
   }
 }
 
-// New function to list available models
-export async function listModels() {
-  try {
-    const models = await genAI.listModels();
-    console.log('Available models:', models);
-    return models;
-  } catch (error) {
-    console.error('Error listing models:', error);
-    return [];
-  }
-}
+// Comment out or remove this function
+// export async function listModels() {
+//   try {
+//     const models = await genAI.listModels();
+//     console.log('Available models:', models);
+//     return models;
+//   } catch (error) {
+//     console.error('Error listing models:', error);
+//   }
+// }

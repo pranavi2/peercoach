@@ -1,5 +1,5 @@
 // src/main.tsx
-import React, { useEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
@@ -9,17 +9,9 @@ import StudyGroups from "./components/StudyGroups";
 import EventBoard from "./components/EventBoard";
 import MentorCard from "./components/MentorCard";
 
-import { listModels } from "./utils/gemini"; // import the new function
+// Removed import of listModels since it's commented out in gemini.ts
 
 export function Root() {
-  useEffect(() => {
-    async function fetchModels() {
-      const models = await listModels();
-      console.log("Available Gemini models:", models);
-    }
-    fetchModels();
-  }, []);
-
   return (
     <>
       <Routes>
