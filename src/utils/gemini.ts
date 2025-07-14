@@ -32,5 +32,6 @@ export async function listModels() {
     return models;
   } catch (error) {
     console.error('Error listing models:', error);
+    return [];
   }
 }

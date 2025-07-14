@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../App.css"; // Make sure this is included
 
 const events = [
